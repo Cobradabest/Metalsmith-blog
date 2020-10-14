@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }} - {{ site.name }}</title>
+  <meta name="description" content="{{ blurb }}" />
+  <link rel="alternate" type="application/rss+xml" title="Gamerstorm RSS feed (English)" href="englishrss.rss" />
+</head>
+<body>
+  <article>
+    <h1><img src="{{ icon }}" width=25px height=25px>{{ title }}</h1>
+    <div class="meta">
+        {{#if date}}Pit oot: {{ date }}{{/if}} - {{#if author}}Bi: {{ author }}{{/if}}
+    </div>
+    {{{ contents }}}
+  </article>
+</body>
+</html>

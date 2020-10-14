@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.name }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="hame">
+  <!-- <h1>{{ site.name }}</h1> -->
+
+  <div class="recent">
+  {{#each articles}}
+      <span class="title"><a href="{{ path }}">{{ title }}</a></span>
+	  <div>{{{ contents }}}</div>
+      <span class="date">{{ date }}</span>
+	  <hr>
+  {{/each}}
+  </div>
+
+</body>
+</html>
